@@ -1,0 +1,198 @@
+/* Réinitialisation de base : supprime les marges et paddings par défaut des navigateurs */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style appliqué à l'ensemble du BODY pour définir l'apparence générale du site */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f7f9;
+  font-size: 16px;
+}
+
+/* pour centrer le contenu et limiter la largeur sur grands écrans */
+header,
+nav,
+section,
+footer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+/* HEADER : En-tête de la page */
+header {
+  background-color: #1a4e6e;
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+/* Barre de navigation */
+nav {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* petite ombre */
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* pour aligner les liens horizontalement */
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1a4e6e;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s; /* Transition pour l'effet hover */
+}
+
+/* Effet au survol des liens de navigation */
+nav a:hover {
+  background-color: #3b82f6; /* Couleur au survol */
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Conteneur principal des articles */
+section {
+  padding: 20px 0;
+  background-color: #ffffff;
+  border-radius: 8px; /* Bords arrondis */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Ombre */
+  margin-bottom: 20px;
+}
+
+article {
+  padding: 20px;
+  border-left: 5px solid #3b82f6; /* Ligne pour séparer les articles */
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.9em;
+  border-top: 2px solid #1a4e6e;
+}
+
+/* Titre principal d'article */
+h2 {
+  color: #1a4e6e;
+  font-size: 1.8em;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* Sous-titres */
+h3,
+h4 {
+  color: #3b82f6;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+/* Paragraphes */
+p {
+  margin-bottom: 15px;
+  text-align: justify; /* Justification du texte pour une présentation soignée */
+}
+
+/* Liens hypertexte généraux */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/* Légende des images */
+figcaption {
+  font-size: 0.8em;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+
+#image-1 {
+  /* Image du portrait */
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 15px auto; /* Centrage */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#image-2,
+#image-3 {
+  /* Images d'illustration */
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Effet zoom sur image */
+img {
+  /* transition pour rendre l'effet de zoom fluide */
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Effet de zoom au survol sur toutes les images */
+img:hover {
+  transform: scale(1.02); /* Grossissement de 2% */
+}
+
+.video-container {
+  /* Conteneur pour faciliter le centrage et ajouter un effet de carte moderne */
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* Ombre */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-media {
+  /* Style appliqué à la balise <video> locale */
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
